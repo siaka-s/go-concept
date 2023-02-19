@@ -34,7 +34,7 @@ func main() {
 		"huile": 1500,
 		"pain":  150,
 	}
-	majmap(listecourse) // bonbon est ajouté
+	majmap(listecourse) // bonbon est ajouté car avec le type maps la valeur de items pointe vers listecourse
 
 	fmt.Println(listecourse)
 
