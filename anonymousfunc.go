@@ -5,6 +5,7 @@ import "fmt"
 func main() {
 
 	w := func() {
+		// affichage sans import ,envoyer à disparaitre dans le futur
 		println("je suis une fonction anonyme")
 	}
 	// appel de la fonction anonyme
