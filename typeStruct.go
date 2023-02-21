@@ -31,4 +31,10 @@ func main() {
 	fmt.Println(personnel1)
 	fmt.Println(personnel2)
 
+	newc := contactcreate("siaka", "siahoué", 07222222, 0722266666) // lier au fichier contact qui cré un nouveau contact
+
+	fmt.Println(newc)
+
 }
+
+// exécution du code -> go run typeStruct.go contact.go
