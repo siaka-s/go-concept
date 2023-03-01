@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 type Car interface {
+
+	// définir une valeur de retour pour les méthodes de l'interface
 	vitesseMax() int
 
 	kilometrage() int
@@ -42,16 +44,19 @@ func main() {
 
 }
 
+// définition de la fonction d'affichage
 func printCarInfo(c Car) {
 	fmt.Println("la voiture peut atteindre", c.kilometrage(), "km avec une vitesse max estimé à", c.vitesseMax(), "km/h")
 }
 
+// les reciver sont des pointer par convention
 func (k *Kia) vitesseMax() int {
 	return 260
 }
 func (k *Kia) kilometrage() int {
 	return 1000
 }
+
 func (f *Ford) vitesseMax() int {
 	return 230
 }
