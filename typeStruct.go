@@ -31,9 +31,13 @@ func main() {
 	fmt.Println(personnel1)
 	fmt.Println(personnel2)
 
+	// Appel de la fonction contactcreat contenu dans contact.go
+
 	newc := contactcreate("siaka", "siahoué", 07222222, 0722266666) // lier au fichier contact qui cré un nouveau contact
 
 	fmt.Println(newc)
+
+	fmt.Printf("le nom est : %v ", newc.name) // récupéré une valeur de mon type contact
 
 }
 
